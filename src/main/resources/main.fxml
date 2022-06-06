@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="root" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="320.0" minWidth="200.0" prefWidth="300.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1004.0" minWidth="10.0" prefWidth="961.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="DIJKSTRA SOLVER" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Georgia" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="15.0" top="15.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label text="Node Configuration:  ">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="chooseFileButton" mnemonicParsing="false" text="Choose..." />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label fx:id="filePathLabel" text="&lt;None&gt;" wrapText="true" />
+               </children>
+            </HBox>
+            <VBox>
+               <children>
+                  <Label text="Result:">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <Label text="Minimum Weight    : " />
+                        <Label fx:id="minimumWeightLabel" text="x">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <Label text="Execution Time (ms): " />
+                        <Label fx:id="executionTimeLabel" text="y">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+      <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </StackPane>
+   </children>
+</GridPane>
