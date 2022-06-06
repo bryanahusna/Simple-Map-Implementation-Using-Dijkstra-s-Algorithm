@@ -7,7 +7,22 @@
     <groupId>com.bryanahusna</groupId>
     <artifactId>dijkstra</artifactId>
     <version>1.0.0</version>
+    <repositories>
+        <repository>
+            <id>in-project</id>
+            <name>In Project Repo</name>
+            <url>file://${project.basedir}/src/libs</url>
+        </repository>
+    </repositories>
+
     <dependencies>
+        <dependency>
+            <groupId>JavaFXSmartGraph</groupId>
+            <artifactId>JavaFXSmartGraph</artifactId>
+            <scope>system</scope>
+            <version>0.9.4</version>
+            <systemPath>${basedir}\src\libs\JavaFXSmartGraph-0.9.4.jar</systemPath>
+        </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>

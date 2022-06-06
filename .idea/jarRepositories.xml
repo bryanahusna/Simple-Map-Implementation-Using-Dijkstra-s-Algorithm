@@ -16,5 +16,10 @@
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="in-project" />
+      <option name="name" value="In Project Repo" />
+      <option name="url" value="file://C:\Bryan\Kuliah\Semester 4 (2021-2022)\Akademik\Pendaftaran Asisten Lab IRK\Simple-Map-Implementation-Using-Dijkstra-s-Algorithm/src/libs" />
+    </remote-repository>
   </component>
 </project>
