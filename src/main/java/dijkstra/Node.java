@@ -16,6 +16,10 @@ public class Node {
         this.edges = new ArrayList<>();
     }
 
+    public void addEdge(NodeDirectedEdge nde){
+        this.edges.add(nde);
+    }
+
     public String getName() {
         return name;
     }
