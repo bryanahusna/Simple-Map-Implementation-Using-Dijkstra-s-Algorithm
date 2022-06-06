@@ -16,6 +16,15 @@ public class Node {
         this.edges = new ArrayList<>();
     }
 
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder(this.name + " --> ");
+        for(NodeDirectedEdge e : this.edges){
+            result.append(String.format("%s(%f), ", e.getToNode().getName(), e.getWeight()));
+        }
+        return result.toString();
+    }
+
     public void addEdge(NodeDirectedEdge nde){
         this.edges.add(nde);
     }

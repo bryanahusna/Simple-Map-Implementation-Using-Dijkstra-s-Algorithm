@@ -3,7 +3,6 @@ import dijkstra.DijkstraNode;
 import dijkstra.Node;
 import dijkstra.NodeDirectedEdge;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -25,7 +24,7 @@ public class DijkstraTest {
         A.addEdge(new NodeDirectedEdge(B, 5));
         A.addEdge(new NodeDirectedEdge(C, 15));
         B.addEdge(new NodeDirectedEdge(C, 6));
-        D.addEdge(new NodeDirectedEdge(D, 2));
+        C.addEdge(new NodeDirectedEdge(D, 2));
 
         Dijkstra d = new Dijkstra(nodes);
         List<DijkstraNode> result = d.solve("A", "C");
