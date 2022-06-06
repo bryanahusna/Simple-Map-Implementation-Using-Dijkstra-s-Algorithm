@@ -13,6 +13,11 @@ public class DijkstraNode {
         this.isVisited = false;
     }
 
+    @Override
+    public String toString() {
+        return node.getName() + " " + minimumDistance + " Parent: " + (minimumParent != null ? minimumParent.getNode().getName() : "(Source Node)");
+    }
+
     public Node getNode() {
         return node;
     }
